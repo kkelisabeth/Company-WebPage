@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Account page for managing user information and settings.">
+    <meta name="keywords" content="account, user, settings">
+    <meta name="author" content="Elizabeth Paula Kozlova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../css/account.css">
+</head>
+<body>
+    <header class="header">
+        <h1>ClearSpace</h1>
+        <div class="nav-buttons">
+            <button onclick="location.href='index.html';">Home</button>
+            <button onclick="location.href='form.html';">Order Services</button>
+            <button onclick="location.href='orders.html';">Your Orders</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="form-container">
+            <h2>Login / Register</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="social-login">
+                <button id="facebook-login">Login with Facebook</button>
+                <button id="google-login">Login with Google</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact us: <a href="https://www.instagram.com/clearspace___?igsh=OG9xbDJqcWxsNHdj">Instagram</a> <a href="https://www.tiktok.com/@clearspace__">TikTok</a></p>
+        <p>Created by Elizabeth Paula Kozlova</p>
+        <p>May 2024</p>
+    </footer>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

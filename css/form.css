@@ -1,0 +1,140 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center; /* Center text globally */
+    background-color: #766358; /* Set main background color */
+    color: #33312f;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #33312f;
+    color: white;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box;
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header .nav-buttons button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header .nav-buttons button:hover {
+    background-color: #777;
+}
+
+.section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #33312f;
+}
+
+.form-container {
+    background-color: rgba(201, 189, 180, 0.5);    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 80px; /* Adjusted for fixed header */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-top: 10px;
+    text-align: left; /* Align labels to the left */
+    width: 100%; /* Ensure labels span full width */
+}
+
+form input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 95%;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #33312f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* CSS for the order form */
+#services {
+    text-align: left; /* Align checkboxes to the left */
+    width: 100%; /* Ensure the container spans full width */
+}
+
+#services label {
+    display: flex; /* Ensure the label and checkbox are on the same line */
+    align-items: center; /* Center the checkbox and text vertically */
+    margin-top: 10px;
+}
+
+#services input[type="checkbox"] {
+    margin-right: 5px; /* Add some space between checkbox and label text */
+    width: auto; /* Ensure checkbox width does not stretch */
+}
+
+footer {
+    background-color: #33312f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

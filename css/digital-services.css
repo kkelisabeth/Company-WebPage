@@ -1,0 +1,118 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center; /* Center text globally */
+    background-color: #766358; /* Set main background color */
+    color:#33312f;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #33312f;
+    color: white;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box;
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header .nav-buttons button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header .nav-buttons button:hover {
+    background-color: #777;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 50px; /* Adjust as needed */
+}
+
+h2 {
+    font-size: 30px; /* Smaller size for "Our Team" */
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.digital-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: rgba(201, 189, 180, 0.5); /* Set background color with 50% transparency */
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.digital-service.reverse {
+    flex-direction: row-reverse;
+}
+
+.digital-service img {
+    width: 300px; /* Fixed width */
+    height: auto; /* Fixed height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.digital-service .description {
+    max-width: 600px;
+    text-align: center;
+}
+
+.digital-service .description p {
+    margin: 10px 0;
+    font-size: 1.25em;
+}
+
+footer {
+    background-color: #33312f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

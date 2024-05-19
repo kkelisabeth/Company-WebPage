@@ -1,0 +1,211 @@
+.carousel-control-prev,
+.carousel-control-next {
+    display: none; /* Hide the carousel control arrows */
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center; /* Center text globally */
+    background-color: #766358; /* Set main background color */
+    color:#33312f;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #33312f;
+    color: white;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box;
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Adjust as necessary */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header .nav-buttons button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header .nav-buttons button:hover {
+    background-color: #777;
+}
+
+.carousel {
+    margin-bottom: 20px;
+    line-height: 1;
+    left: 0;
+    min-width: 100%;
+    min-height: 500px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: inherit;
+}
+
+.carousel-slide {
+    background-color: rgba(201, 189, 180, 0.5); /* Set background color with 50% transparency */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 70px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px; /* Adjust as needed */
+}
+
+h2 {
+    font-size: 30px; /* Smaller size for "Our Team" */
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.examples {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 100px;
+    padding: 10px 0;
+    justify-content: center; /* Center items horizontally */
+    position: relative;
+}
+
+.example {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    margin: 10px; /* Add margin to separate examples */
+}
+
+.example img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 90%; /* Increase image width */
+    max-width: 100%;
+    height: 250px; /* Increase image height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.example h2 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.example p {
+    font-size: 0.9em;
+}
+
+
+.employees-container {
+    position: relative;
+    text-align: center; /* Center the heading */
+}
+
+.employees {
+    display: flex;
+    overflow-x: auto;
+    gap: 50px;
+    padding: 10px 0;
+    justify-content: center; 
+}
+
+.employee {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 200px; /* Adjust width as needed */
+}
+
+.employee img {
+    width: 200%;
+    max-width: 180px; /* Increase the max-width */
+    height: 180px; /* Increase the height */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.employee p {
+    margin: 10px 0 5px;
+}
+
+@media (max-width: 768px) {
+    .examples {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #33312f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.videos-container {
+    padding: 20px;
+    background-color: rgba(201, 189, 180, 0.5); /* Change the background color as needed */
+    border-radius: 20px;
+    margin:20px;
+    margin-bottom: 20px;
+    line-height: 1;
+    left: 0;
+}
+
+.videos-container p {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.video {
+    margin-bottom: 20px; /* Add some space between videos */
+}
+
+.video iframe {
+    width: 100%; /* Make the videos responsive */
+    height: 315px; /* Adjust the height as needed */
+}

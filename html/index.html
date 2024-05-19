@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Main landing page for the website.">
+    <meta name="keywords" content="home, landing, main">
+    <meta name="author" content="Elizabeth Paula Kozlova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kozlova Elizabeth Paula</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- JavaScript code to display date and store/retrieve user's name using cookies -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Display date
+            const currentDate = new Date().toDateString();
+            document.getElementById('date').textContent = 'Today: ' + currentDate;
+        
+            // Store/retrieve user's name using cookies
+            const userName = getCookie('username');
+            if (userName) {
+                document.getElementById('username').textContent = 'Welcome, ' + userName;
+            } else {
+                const promptName = prompt('Please enter your name:');
+                if (promptName) {
+                    setCookie('username', promptName, 30);
+                    document.getElementById('username').textContent = 'Welcome, ' + promptName;
+                }
+            }
+        });        
+
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = 'expires=' + date.toUTCString();
+            document.cookie = name + '=' + value + ';' + expires + ';path=/';
+        }
+
+        function getCookie(name) {
+            const cookieName = name + '=';
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const cookieArray = decodedCookie.split(';');
+            for (let i = 0; i < cookieArray.length; i++) {
+                let cookie = cookieArray[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(cookieName) == 0) {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+            return '';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div id="user-info">
+                <span id="date"></span>
+                <span id="username"></span>
+            </div>
+            <div class="header-buttons">
+                <button onclick="location.href='account.html';">Account</button>
+                <button onclick="location.href='form.html';">Order Services</button>
+                <button onclick="location.href='orders.html';">Your Orders</button>
+            </div>
+        </div>
+    </header>
+    <div class="fullscreen-image">
+        <div class="overlay">
+            <h2>ClearSpace Design </h2>
+            <h3>Innovative Design Solutions. Best Home Organization. Your Time Organization Supervisor.</h3>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="content">
+            <div class="content-left" >
+                <img src="../images/picture1.png" alt="Picture 1">
+            </div>
+            <div class="content-right">
+                <h2>A well-designed home is a work of art</h2>
+                <p>Welcome to ClearSpace, where we craft tranquil homes and streamline spaces. </p>
+                <p>Our mission? Simplify life, one room at a time. </p>
+                <p>Explore our portfolio for design inspirations and organization solutions.</p>
+                <p>Welcome to simplicity redefined. </p>
+            </div>
+            <div class="content-right">
+                <img src="../images/picture3.png" alt="Picture 2">
+            </div>
+        </div>
+    </section>
+
+    <section class="section slider-section">
+        <h2>Successful Renovations and our Home Organization Examples</h2>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="../images/case1.png" alt="Before 1">
+                <p>Before & After Decluttering and Organization</p>
+            </div>
+            <div class="slide">
+                <img src="../images/insol1.png" alt="Before 1">
+                <p>Spices Organization Example</p>
+            </div>
+            <div class="slide">
+                <img src="../images/case2.png" alt="Before 1">
+                <p>Before & After Decluttering and Organization</p>
+            </div>
+            <div class="slide">
+                <img src="../images/insol2.png" alt="Before 1">
+                <p>Cleaning Supplies Organization Example</p>
+            </div>
+            <div class="slide">
+                <img src="../images/insol3.png" alt="Before 1">
+                <p>Kitchen Drawer Organization Example</p>
+            </div>
+            <div class="slide">
+                <img src="../images/insol4.png" alt="Before 1">
+                <p>Kitchen Organization Example</p>
+            </div>
+            <div class="slide">
+                <img src="../images/insol5.png" alt="Before 1">
+                <p>Bathroom Drawer Organization Example</p>
+            </div>
+            <div class="slide">
+                <img src="../images/case3.png" alt="Before 1">
+                <p>Before & After Decluttering and Organization</p>
+            </div>
+
+            <div class="slide">
+                <img src="../images/insol7.png" alt="Before 1">
+                <p>Wardrobe Organization Example</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content">
+            <div class="content-left">
+                <img src="../images/aboutus.png" alt="About Us Picture">
+            </div>
+            <div class="content-right">
+                <h2>About Us</h2>
+                <p>At ClearSpace, we're not just in the business of home organization and interior design — we're in the business of transforming lives.</p>
+                <p>Our dedicated team of designers, organizers, and project managers share a singular passion: to create spaces that inspire joy and elevate everyday living. From our visionary designers who breathe life into your dreams to our meticulous organizers who bring order to chaos, each member of our team plays a vital role in turning your vision into reality.</p>
+                <p>Behind the scenes, our teams collaborate seamlessly, blending creativity with precision to deliver results that exceed expectations. </p>
+                <p>Our designers infuse every project with innovation and style, while our organizers work tirelessly to optimize space and functionality. With a keen eye for detail and a commitment to excellence, our time management teams ensure that every project progresses smoothly and efficiently, keeping you informed and involved every step of the way.</p>
+                <p>Together, we strive for nothing short of perfection, pushing boundaries and surpassing standards to create spaces that inspire and delight. </p>
+                <p>Welcome to a world where passion meets purpose, where creativity thrives, and where your dream home becomes a reality. </p>
+                <p>Welcome to ClearSpace, where every space tells a story, and every story begins with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content">
+            <div class="content-left">
+                <h2>Our Services</h2>
+                <p>In ClearSpace we specialize in transforming your living spaces into havens of tranquility and functionality. </p>
+                <p>Our services encompass expert interior design and meticulous home organization, tailored to meet your unique needs and elevate your lifestyle.</p>
+                <p>Step into a world of creativity and style with our interior design solutions, where our talented designers bring your vision to life with flair and precision. From concept to completion, we work closely with you to create spaces that reflect your personality and enhance your living experience.</p>
+                <p>But our commitment to clarity and simplicity doesn't end there. Our home organization services are designed to declutter your life and restore order to every corner of your home. Whether it's organizing closets, optimizing storage solutions, or decluttering living spaces, our professional organizers are here to help you reclaim space and peace of mind.</p>
+                <p>In addition to our physical services, we also offer digital solutions to complement your lifestyle. Explore our range of printable planners and innovative apps designed to streamline your daily routines and enhance productivity.
+                <p>At ClearSpace, we believe that a well-designed and organized home is the foundation for a balanced and harmonious life. </p>
+                <p>Let us help you create a space where beauty meets functionality, and where every day feels like coming home. Welcome to ClearSpace.</p>
+                <div class="services">
+                    <div class="service" onclick="location.href='organization-services.html';">
+                        <img src="../images/organization.png" alt="Organization Services">
+                        <p>Organization Services</p>
+                    </div>
+                    <div class="service" onclick="location.href='interior-design.html';">
+                        <img src="../images/interiordesign.png" alt="Interior Design">
+                        <p>Interior Design</p>
+                    </div>
+                    <div class="service" onclick="location.href='digital-services.html';">
+                        <img src="../images/digital.png" alt="Digital Services">
+                        <p>Digital Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <img src="../images/ourservices.png" alt="Our Services Picture">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact us: <a href="https://www.instagram.com/clearspace___?igsh=OG9xbDJqcWxsNHdj">Instagram</a> <a href="https://www.tiktok.com/@clearspace__">TikTok</a></p>
+        <p>Created by Elizabeth Paula Kozlova</p>
+        <p>May 2024</p>
+        <div class="social-plugin">
+            <!-- Facebook Page Plugin -->
+            <div class="fb-page" data-href="https://www.facebook.com/eevee.kp/" data-tabs="timeline" data-width="340" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/eevee.kp/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/eevee.kp/">Contact Me on Facebook</a>
+                </blockquote>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/browser_compatibility.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

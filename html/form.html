@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Form page for submitting orders.">
+    <meta name="keywords" content="form, submit, order">
+    <meta name="author" content="Elizabeth Paula Kozlova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <header class="header">
+        <h1>ClearSpace</h1>
+        <div class="nav-buttons">
+            <button onclick="location.href='index.html';">Home</button>
+            <button onclick="location.href='account.html';">Account</button>
+            <button onclick="location.href='orders.html';">Your Orders</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="form-container">
+            <h2>Order Services</h2>
+            <form id="order-form">
+                <label id="service">Services:</label>
+                <div id="services">
+                    <input type="checkbox" id="service1" name="services" value="Organization"> Organization<br>
+                    <input type="checkbox" id="service2" name="services" value="Interior Design"> Interior Design<br>
+                    <input type="checkbox" id="service3" name="services" value="Printable Tracker"> Printable Tracker<br>
+                    <input type="checkbox" id="service4" name="services" value="Book Online Session for Company"> Book Online Session for Company<br>
+                    <input type="checkbox" id="service5" name="services" value="Book Online Session for Individuals"> Book Online Session for Individuals<br>
+                </div>
+                <label for="area">Area (sq meters):</label>
+                <input type="text" id="area" name="area" disabled> 
+                <label id="deadline">Select a Date and Month:</label>
+                <div>
+                    <select id="date" name="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    
+                    <select id="month" name="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    
+                </div>
+                <label for="orderdate">Order Date:</label>               
+                <input type="date" id="orderdate" name="orderdate" required>                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact us: <a href="https://www.instagram.com/clearspace___?igsh=OG9xbDJqcWxsNHdj">Instagram</a> <a href="https://www.tiktok.com/@clearspace__">TikTok</a></p>
+        <p>Created by Elizabeth Paula Kozlova</p>
+        <p>May 2024</p>
+    </footer>
+
+    <script src="../js/order.js"></script>
+</body>
+</html>
